@@ -1,0 +1,71 @@
+/* contact page */
+#client {
+  .form-group {
+      @extend .mb-2;
+    }
+  label {
+    @extend .box;
+    @extend .text-cap;
+    @extend .mb-2;
+  }
+  input {
+    height: 35px;
+    @extend .box;
+    @extend .w-20p;
+    @extend .mb-2;
+    @extend .br-1;
+    @extend .b-solid-light-grey-1;
+    @extend .p-2;
+    &:focus {
+      @extend .ob-solid-orange-1;
+    }
+  }
+
+  textarea {
+    resize: none;
+    @extend .mb-4;
+    @extend .w-20p;
+    @extend .p-2;
+    @extend .b-solid-light-grey-1;
+    &:focus {
+      @extend .ob-solid-orange-1;
+    }
+  }
+
+  button {
+    @extend .btn;
+    @extend .w-18;
+    @extend .p-2;
+    @extend .text-4;
+    @extend .bg-grey;
+    @extend .br-3;
+    @extend .text-white;
+  }
+}
+
+
+
+#provider {
+  @extend .h-4;
+  @extend .bg-black;
+  @extend .pt-9;
+  @extend .text-center;
+  @extend .text-white;
+
+  .contact-group {
+    @extend .fl-3;
+  }
+  .icon {
+    @extend .mb-2;
+    i {    
+      @extend .box;
+      @extend .text-8;
+      @extend .mb-4;
+    }
+    .title {
+      @extend .text-4;
+      @extend .text-cap;
+      @extend .text-bold;
+    }
+  }
+}

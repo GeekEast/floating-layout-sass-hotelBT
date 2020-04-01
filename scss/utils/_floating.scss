@@ -1,0 +1,34 @@
+/* floating */
+.fp {
+  overflow: hidden; /* clear float */
+}
+
+.fl {
+  float: left;
+}
+
+.fr {
+  float: right;
+}
+
+.container {
+  @extend .center;
+  @extend .fp;
+  @extend .w-12p;
+  max-width: 1190px;
+  min-width: 588px;
+}
+
+@for $i from 1 through 10 {
+  .fl-#{$i} {
+    @extend .fl;
+    @extend .w-#{$i}d;
+  }
+
+  .fr-#{$i}{
+    @extend .fr;
+    @extend .w-#{$i}d;
+  }
+}
+
+

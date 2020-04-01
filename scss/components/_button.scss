@@ -1,0 +1,18 @@
+
+.btn {
+  @extend .box;
+  @extend .bg-black;
+  @extend .py-2;
+  @extend .px-1;
+  @extend .w-30;
+}
+
+
+.btn-light {
+  @include create-btn("white", "black");
+}
+
+.btn:hover {
+  @extend .bg-orange;
+  @extend .text-black;
+}

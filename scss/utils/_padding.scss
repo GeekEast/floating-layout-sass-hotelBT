@@ -1,0 +1,19 @@
+@import 'variables';
+@import 'functions';
+
+@for $i from 1 through 60 {
+  .p-#{$i} {
+    padding: #{$i * $unit}px;
+  }
+  .px-#{$i} {
+    padding-left: #{$i * $unit}px;
+    padding-right: #{$i * $unit}px;
+  }
+  .py-#{$i} {
+    padding-top: #{$i * $unit}px;
+    padding-bottom: #{$i * $unit}px;
+  }
+  .pt-#{$i} {
+    padding-top: #{$i * $unit}px;
+  }
+}

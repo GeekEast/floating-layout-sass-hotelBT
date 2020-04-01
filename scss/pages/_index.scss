@@ -1,0 +1,62 @@
+@import 'about';
+@import 'contact';
+@import 'home';
+
+// general settings
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+li {
+  list-style-type: none;
+}
+
+a {
+  @extend .text-white;
+  text-decoration: none;
+}
+
+// navigation
+#navbar {
+  @extend .bg-black;
+  .logo {
+    @extend .fl;
+    @extend .p-2;
+    @extend .hr_a-text-orange;
+  }
+  ul {
+    @extend .fp;
+    @extend .fr;
+
+    li {
+      @extend .fl;
+      @extend .p-3;
+      @extend .hr_a-text-orange;
+      @extend .hr-bg-grey;
+    }
+  }
+}
+
+// footer
+#copyright {
+  @extend .bg-grey;
+  @extend .text-center;
+  @extend .text-white;
+  @extend .p-6;
+}
+
+
+/* status class */
+.current {
+  @extend .bg-grey;
+  & a {
+    @extend .text-orange;
+  }
+}
+

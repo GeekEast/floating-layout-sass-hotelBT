@@ -1,0 +1,19 @@
+/* box */
+.center {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.box {
+  display: block;
+}
+
+.inline-box {
+  display: inline-block;
+}
+
+@for $i from 1 through 10 {
+  .box-#{$i} {
+    @extend .fl-#{$i};
+  }
+}

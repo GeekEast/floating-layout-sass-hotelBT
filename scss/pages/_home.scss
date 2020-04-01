@@ -1,0 +1,65 @@
+#showcase {
+  @include set-background("/img/showcase.jpg");
+  @extend .h-12;
+  @extend .text-center; 
+  @extend .text-white;
+  .showcase-content {
+    @extend .pt-40;
+    .welcome {
+      @extend .text-title-12;
+      @extend .mb-4;
+    }
+    .intro {
+      @extend .mb-4;
+    }
+  }
+}
+
+#history {
+  @extend .h-8;
+  @extend .fp;
+  @extend .text-center;
+  .pic {
+    @extend .fl;
+    @extend .w-10p;
+    @extend .h-20p;
+    @include set-background("/img/photo-1.jpg");
+  }
+  .content {
+    @extend .fr;
+    @extend .w-10p;
+    @extend .h-20p;
+    @extend .bg-black;
+    @extend .text-white;
+    @extend .pt-10; 
+    @extend .px-8;
+    .title {
+      @extend .text-cap;
+      @extend .text-bold;
+      @extend .text-4;
+      @extend .mb-8;
+    }
+    .intro {
+      @extend .mb-8;
+    }
+  }
+}
+
+#features {
+  @extend .text-center;
+  @extend .h-5;
+  & > div {
+    @extend .area-3;
+    .icon {
+      @extend .mb-2;
+      i {
+        @extend .text-10;
+        @extend .mb-2;
+      }
+      div {
+        @extend .text-cap;
+      }
+    }
+  }
+}
+

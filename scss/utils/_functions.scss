@@ -1,0 +1,13 @@
+@function ten-times($num) {
+  @return $num * 10;
+}
+
+@mixin set-background($url) {
+  background: url($url) no-repeat center center/cover;
+}
+
+@mixin create-btn($background, $text-color) {
+  @extend .box;
+  @extend .bg-#{$background};
+  @extend .text-#{$text-color};
+}

@@ -1,0 +1,22 @@
+@import 'variables';
+@import 'functions';
+
+
+@for $i from 1 through 40 {
+  .w-#{$i} {
+    width: #{$i * $unit}px;
+  }
+
+  @if ($i <= 20) {
+    .w-#{$i}p {
+      width: #{$i * $unit + '%'};
+    }
+  }
+
+  @if ($i <= 10) {
+    .w-#{$i}d {
+      width: 100% / $i;
+    }
+  }
+}
+

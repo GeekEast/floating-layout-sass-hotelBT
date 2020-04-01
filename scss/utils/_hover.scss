@@ -1,0 +1,12 @@
+@import 'variables';
+
+@each $color-name,$color-val in $colors {
+  @debug $color-name;
+  .hr_a-text-#{$color-name}:hover a {
+    @extend .text-#{$color-name};
+  }
+  
+  .hr-bg-#{$color-name}:hover {
+    @extend .bg-#{$color-name};
+  }
+}

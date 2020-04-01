@@ -1,0 +1,68 @@
+/* About page */
+/* about HBT */
+
+#about {
+  @extend .h-7;
+  @extend .pt-4;
+  .content {
+    @extend .fl;
+    @extend .w-10p;
+    @extend .pt-5;
+    p {
+      @extend .text-justify;
+      @extend .text-black;
+    }
+  }
+  .pic {
+    @extend .fr;
+    @extend .w-8p;
+    @extend .h-6;
+    @extend .br-10p;
+    @include set-background("/img/photo-2.jpg");
+  }
+}
+
+/* reviews */
+#reviews {
+  @extend .h-14;
+  @include set-background("/img/test-bg.jpg");
+  @extend .pt-20;
+  .title {
+    @extend .text-cap;
+    @extend .text-bold;
+    @extend .text-8;
+    @extend .text-white;
+    @extend .text-center;
+    @extend .mb-8;
+  }
+  .review {
+    @extend .h-3;
+    @extend .mb-8;
+    @extend .bg-orange;
+    @extend .p-2;
+    @extend .br-2;
+
+    .avatar {
+      @extend .fl;
+      @extend .w-3p;
+      @extend .h-3;
+      @extend .p-4;
+      @extend .pt-3;
+
+      img {
+        @extend .w-20;
+        @extend .h-2;
+        @extend .br-10p;
+      }
+    }
+
+    .text {
+      @extend .fl;
+      @extend .w-16p;
+      @extend .h-1;
+      @extend .text-black;
+      @extend .text-lh-6;
+      @extend .pt-4;
+    }
+  }
+}

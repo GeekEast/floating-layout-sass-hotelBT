@@ -1,0 +1,45 @@
+@import 'variables';
+@import 'functions';
+
+@for $i from 1 through 20 {
+  .text-title-#{$i} {
+    @extend .text-cap;
+    @extend .text-#{$i};
+    @extend .text-bold;  
+  }
+}
+
+// text-colors
+@each $color-name, $color-val in $colors {
+  .text-#{$color-name} {
+    color: $color-val;
+  }
+}
+
+@for $i from 1 through 20 {
+  .text-#{$i} {
+    font-size: #{$unit * $i}px;
+  }
+  .text-lh-#{$i} {
+    line-height: #{$unit * $i}px;
+  }
+}
+
+
+@each $weight-name, $weight-val in $weights {
+  .text-#{$weight-name} {
+    font-weight: $weight-val;
+  }
+}
+
+@each $form-name, $form-val in $forms {
+  .text-#{$form-name} {
+    text-transform: $form-val;
+  }
+}
+
+@each $align-name, $align-val in $aligns {
+  .text-#{$align-name} {
+    text-align: $align-val;
+  }
+}

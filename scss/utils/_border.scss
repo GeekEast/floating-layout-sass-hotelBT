@@ -1,0 +1,30 @@
+@import "variables";
+
+@for $i from 1 through 20 {
+  .br-#{$i} {
+    border-radius: #{$i * $unit}px;
+  }
+  .br-#{$i}p {
+    border-radius: #{$i * $unit + "%"};
+  }
+}
+
+@for $i from 1 through 5 {
+  @each $color-name,$color-val in $colors {
+    .b-solid-#{$color-name}-#{$i} {
+      border: #{$i}px solid $color-val;
+    }
+
+    .b-dotted-#{$color-name}-#{$i} {
+      border: #{$i}px dotted $color-val;
+    }
+
+    .ob-solid-#{$color-name}-#{$i} {
+      outline: #{$i}px solid $color-val;
+    }
+
+    .ob-dotted-#{$color-name}-#{$i} {
+      outline: #{$i}px dotted $color-val;
+    }
+  }
+}
