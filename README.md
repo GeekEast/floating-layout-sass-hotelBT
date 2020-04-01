@@ -20,11 +20,11 @@ div {
 - **css属性**也可以nesting, 但是存在bug
 #### css
 ```scss
-ul li {...}
+ul li {}
 ```
 #### scss
 ```scss
 ul {
-  li {...}
+  li {}
 }
 ```
