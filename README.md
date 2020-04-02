@@ -41,6 +41,7 @@
   - [选择器情景](#%E9%80%89%E6%8B%A9%E5%99%A8%E6%83%85%E6%99%AF)
     - [批量属性](#%E6%89%B9%E9%87%8F%E5%B1%9E%E6%80%A7)
     - [内部细节](#%E5%86%85%E9%83%A8%E7%BB%86%E8%8A%82)
+- [Reference](#reference)
 
 <!-- END doctoc generated TOC please keep comment here to allow auto update -->
 
@@ -269,3 +270,7 @@ ul li {
   }
 }
 ```
+## Reference
+- [Sass Basics](SASS用法指南)
+- [Sass: @mixin指令介绍](https://www.w3cplus.com/preprocessor/sass-the-mixin-directive.html)
+- [阮一峰: Sass用法指南](https://www.ruanyifeng.com/blog/2012/06/sass.html)
