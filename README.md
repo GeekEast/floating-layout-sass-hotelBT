@@ -30,6 +30,17 @@
     - [each](#each)
     - [while](#while)
 - [sass: 为了`复用`而生](#sass-%E4%B8%BA%E4%BA%86%E5%A4%8D%E7%94%A8%E8%80%8C%E7%94%9F)
+  - [复用分级](#%E5%A4%8D%E7%94%A8%E5%88%86%E7%BA%A7)
+    - [变量层面](#%E5%8F%98%E9%87%8F%E5%B1%82%E9%9D%A2)
+    - [函数层面](#%E5%87%BD%E6%95%B0%E5%B1%82%E9%9D%A2)
+    - [对象层面](#%E5%AF%B9%E8%B1%A1%E5%B1%82%E9%9D%A2)
+  - [单位重设](#%E5%8D%95%E4%BD%8D%E9%87%8D%E8%AE%BE)
+  - [工具类情景](#%E5%B7%A5%E5%85%B7%E7%B1%BB%E6%83%85%E6%99%AF)
+    - [快速布局](#%E5%BF%AB%E9%80%9F%E5%B8%83%E5%B1%80)
+    - [临时状态](#%E4%B8%B4%E6%97%B6%E7%8A%B6%E6%80%81)
+  - [选择器情景](#%E9%80%89%E6%8B%A9%E5%99%A8%E6%83%85%E6%99%AF)
+    - [批量属性](#%E6%89%B9%E9%87%8F%E5%B1%9E%E6%80%A7)
+    - [内部细节](#%E5%86%85%E9%83%A8%E7%BB%86%E8%8A%82)
 
 <!-- END doctoc generated TOC please keep comment here to allow auto update -->
 
@@ -174,5 +185,87 @@ $i: 6;
 ```
 
 ## sass: 为了`复用`而生
+### 复用分级
+#### 变量层面
+- `numeric`
+- `string`
+- `list`
+- `map`
+- ...
+#### 函数层面
+- `function`
+- `mixin`
+#### 对象层面
+- 实体类 `.`
+  - 工具类 `.current .text-orange`
+  - 组件类 `.btn`
+- 抽象类 `%`
+### 单位重设
+- `数字`: **5**
+- `百分比`: **5%**
+- `Divide`: **1**
+### 工具类情景
+- `松散分布`时使用
+#### 快速布局 
+```html
+<div class="fl-3 pt-3"><.div>
+```
+#### 临时状态 
+```html
+<div class="current"></div>
+```
+### 选择器情景
+- `集中分布`时使用
+#### 批量属性
+- html
+```html
+<ul>
+  <li></li>
+  <li></li>
+  <li></li>
+</ul>
+```
+- css
+```css
+ul li {
+  /* style */
+}
+```
+#### 内部细节
+- html
+```html
+<nav id="navbar">
+  <div class="container">
+    <h1 class="logo">
+      <a href="index.html">HBT</a>
+    </h1>
+    <ul>
+      <li class="current"><a href="index.html">Home</a></li>
+      <li ><a href="about.html">About</a></li>
+      <li ><a href="contact.html">Contact</a></li>
+    </ul>
+  </div>
+</nav>
+```
+- css
+```css
+#navbar {
+  @extend .bg-black;
+  .logo {
+    @extend .fl;
+    @extend .p-2;
+    @extend .hr_a-text-orange;
+  }
+  ul {
+    @extend .fp;
+    @extend .fr;
 
-
+    li {
+      @extend .fl;
+      @extend .p-3;
+      @extend .hr_a-text-orange;
+      @extend .hr-bg-grey;
+    }
+  }
+}
+```
