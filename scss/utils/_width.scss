@@ -1,7 +1,3 @@
-@import 'variables';
-@import 'functions';
-
-
 @for $i from 1 through 40 {
   .w-#{$i} {
     width: #{$i * $unit}px;

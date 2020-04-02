@@ -1,6 +1,3 @@
-@import 'variables';
-@import 'functions';
-
 @for $i from 1 through 60 {
   .p-#{$i} {
     padding: #{$i * $unit}px;

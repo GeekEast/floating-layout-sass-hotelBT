@@ -1,5 +1,3 @@
-@import "variables";
-
 @for $i from 1 through 20 {
   .br-#{$i} {
     border-radius: #{$i * $unit}px;

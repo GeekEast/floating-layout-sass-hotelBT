@@ -1,5 +1,3 @@
-@import "variables";
-
 @each $color-name,$color-val in $colors {
   .bg-#{$color-name} {
     background-color: $color-val;
