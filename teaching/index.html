@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://fonts.googleapis.com/css2?family=Special+Elite&display=swap" rel="stylesheet">
+  <title>主页</title>
+  <style>
+    * {
+      margin: 0;
+      padding:0;
+    }
+    body {
+      font-family: 'Special Elite', cursive;
+    }
+
+    #nav {
+      background-color: #0B4F6C;
+      overflow: auto;
+      height: 50px;
+    }
+
+    .container {
+      /* 宽度占比70%, 盒子居中 */
+      width: 70%;
+      margin: 0 auto;
+    }
+
+    .left {
+      float: left;
+      font-size: 30px;
+      padding: 12px;
+      color: white;
+    }
+    .left:hover {
+      color: rgb(102, 8, 143);
+    }
+
+
+    .right {
+      float: right;
+      overflow: auto;
+    }
+
+    .right > div {
+      float: left;
+      font-size: 20px;
+      padding: 16px;
+      text-transform: capitalize;
+      color: white;
+    }
+
+    .right > div:hover {
+      transition: width 2s, height 2s, background-color 2s, transform 2s;
+      background-color: #01BAEF;
+      color: rgb(102, 8, 143);
+    }
+    .current {
+      background-color: #01BAEF;
+      color: rgb(102, 8, 143) !important;
+    }
+
+
+  </style>
+</head>
+<body>
+    <div id="nav">
+      <div class="container">
+        <div class="left">Hotel</div>
+        <div class="right">
+          <div class="home current">home</div>
+          <div class="about">about</div>
+          <div class="contact">contact</div>
+        </div>
+      </div>
+    </div>
+</body>
+</html>

@@ -15,10 +15,10 @@
 
 @for $i from 1 through 20 {
   .text-#{$i} {
-    font-size: #{$unit * $i}px;
+    font-size: #{$i}rem;
   }
   .text-lh-#{$i} {
-    line-height: #{$unit * $i}px;
+    line-height: #{$i}rem;
   }
 }
 

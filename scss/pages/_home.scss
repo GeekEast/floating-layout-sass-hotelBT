@@ -4,7 +4,7 @@
   @extend .text-center; 
   @extend .text-white;
   .showcase-content {
-    @extend .pt-40;
+    @extend .pt-30;
     .welcome {
       @extend .text-title-12;
       @extend .mb-4;
@@ -32,6 +32,7 @@
     @extend .bg-black;
     @extend .text-white;
     @extend .pt-10; 
+    @extend .pb-10;
     @extend .px-8;
     .title {
       @extend .text-cap;

@@ -1,16 +1,19 @@
 @for $i from 1 through 60 {
   .p-#{$i} {
-    padding: #{$i * $unit}px;
+    padding: #{$i}rem;
   }
   .px-#{$i} {
-    padding-left: #{$i * $unit}px;
-    padding-right: #{$i * $unit}px;
+    padding-left: #{$i}rem;
+    padding-right: #{$i}rem;
   }
   .py-#{$i} {
-    padding-top: #{$i * $unit}px;
-    padding-bottom: #{$i * $unit}px;
+    padding-top: #{$i}rem;
+    padding-bottom: #{$i}rem;
   }
   .pt-#{$i} {
-    padding-top: #{$i * $unit}px;
+    padding-top: #{$i}rem;
+  }
+  .pb-#{$i} {
+    padding-bottom: #{$i}rem;
   }
 }

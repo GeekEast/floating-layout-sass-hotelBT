@@ -1,6 +1,6 @@
 @for $i from 1 through 40 {
   .w-#{$i} {
-    width: #{$i * $unit}px;
+    width: #{$i}rem;
   }
 
   @if ($i <= 20) {

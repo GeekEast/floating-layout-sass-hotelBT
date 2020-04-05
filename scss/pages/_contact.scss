@@ -1,5 +1,6 @@
 /* contact page */
 #client {
+  @extend .py-3;
   .form-group {
       @extend .mb-2;
     }

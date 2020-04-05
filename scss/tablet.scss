@@ -1,0 +1,108 @@
+// 移动端禁止左右滑动
+html,body {
+  overflow-x: hidden;
+}
+
+
+// home page
+.tablet-static {
+  position: static;
+}
+
+#navbar {
+  text-align: center;
+
+  top: 0;
+  .container {
+    width: 100%
+  }
+  .logo {
+    float: none;
+    display: block;
+  }
+
+  ul {
+    float: none;
+    li {
+      float: none;
+      display: block;
+    }
+  }
+}
+
+#showcase {
+  height: auto;
+  .showcase-content  {
+    padding-top: 25rem;
+    padding-bottom: 25rem;
+    .title {
+      font-size: 6rem;
+    }
+  }
+  
+}
+
+#history {
+  height: 450px;
+  .pic {
+    display: none;
+  }
+  .content {
+    float: none;
+    width: 100%;
+  }
+}
+
+
+#features {
+  height: 750px;
+  > div {
+    float:none;
+    width: 100%;
+    height: 33.3%;
+  }
+}
+
+
+// about page
+#about {
+  .content, .pic {
+    float: none;
+    width: 100%;
+  }
+
+  .content {
+    margin-bottom: 20px;
+    .title {
+      text-align: center;
+    }
+  }
+}
+
+
+// contact page
+#client {
+  .title,
+  .hint {
+    text-align: center;
+  }
+  button {
+    margin: 0 auto;
+  }
+}
+
+#provider {
+  height: 100rem;
+  padding-top:  10rem;
+  .contact-group {
+    width: 100%;
+    margin-bottom:6rem;
+    float:none;
+    text-align: center;
+    // border: 1px solid red;
+
+  }
+}
+
+
+

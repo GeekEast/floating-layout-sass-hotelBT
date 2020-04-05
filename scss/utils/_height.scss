@@ -1,6 +1,12 @@
 @for $i from 1 through 20 {
   .h-#{$i} {
-    height: #{$i * $unit * 10}px;
+    height: #{$i * 10}rem;
+  }
+  .min-h-#{$i} {
+    min-height: #{$i * 10}rem;
+  }
+  .max-h-#{$i} {
+    max-height: #{$i * 10}rem;
   }
   .h-#{$i}p {
     height: #{$unit * $i +'%'};

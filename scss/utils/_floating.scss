@@ -14,8 +14,9 @@
   @extend .center;
   @extend .fp;
   @extend .w-12p;
+  @extend .px-1;
   max-width: 1190px;
-  min-width: 588px;
+  min-width: 350px;
 }
 
 @for $i from 1 through 10 {
